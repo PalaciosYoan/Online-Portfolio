@@ -9,11 +9,11 @@ def home():
 
 @app.route('/resume')
 def resume():
-    return render_template('base.html')
+    return render_template('resume.html')
 
 @app.route('/personal_projects')
 def personal_projects():
-    return render_template('base.html')
+    return render_template('personal_project.html')
 
 if __name__=='__main__':
     app.run(debug=True)
