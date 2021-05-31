@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+
+{% block head %}
+    <title>Work Experience</title>
+{% endblock %}
+
+{% block body %}
+
+    <link rel='stylesheet' href="{{ url_for('static',filename='css/work_experience.css') }}">
+    <script src="{{ url_for('static',filename='javascript/work_experience_content_hide.js') }}"></script>
+    
+    <div class="content">
+        <h1>Work Experience</h1>
+
+        <div class="dropdowns" id="dropdown">
+            <select name="workEx" id="workEx" onchange="dropdown1()">
+                <option value="Intel">Software Engineer Intern at Intel</option>
+                <option value="UCM-Dining">Financial Advisor Intern at UC Merced</option>
+            </select>
+        </div>
+        <div class="columns">
+            <div id="experience">
+            
+                <div id="ex1">
+                    <div class="dropdowns">
+                        <select name="projects" id="projects" onchange="projects()">
+                            <option value="project1">Artificial Intelligence Project</option>
+                            <option value="project2">POWER BI Project</option>
+                        </select>
+                    </div>
+
+                    <div id="project1">
+                        <p>Objective: CreLorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi accusantium eligendi numquam aliquid tenetur veritatis, reprehenderit, doloribus asperiores explicabo necessitatibus error corrupti facilis perspiciatis voluptas sequi quod! Doloribus dolorum nemo quisquam, molestias accusantium a eius blanditiis ut hic vero, inventore fugit porro dolorem iure expedita natus omnis sit laboriosam magni temporibus sed quod vel. Assumenda dolorum repudiandae odit aperiam dolor quibusdam voluptas, sit expedita rerum totam deserunt cupiditate quam repellendus voluptatum illo eum esse ratione, quis qui pariatur iure recusandae error excepturi voluptatibus! Nostrum deleniti magnam harum, eum eius similique dolor ab assumenda. Unde esse dolorum nam ipsam, excepturi dolor.ate a</p>
+                    </div>
+
+                    <div id="project2" style="display: none;">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi accusantium eligendi numquam aliquid tenetur veritatis, reprehenderit, doloribus asperiores explicabo necessitatibus error corrupti facilis perspiciatis voluptas sequi quod! Doloribus dolorum nemo quisquam, molestias accusantium a eius blanditiis ut hic vero, inventore fugit porro dolorem iure expedita natus omnis sit laboriosam magni temporibus sed quod vel. Assumenda dolorum repudiandae odit aperiam dolor quibusdam voluptas, sit expedita rerum totam deserunt cupiditate quam repellendus voluptatum illo eum esse ratione, quis qui pariatur iure recusandae error excepturi voluptatibus! Nostrum deleniti magnam harum, eum eius similique dolor ab assumenda. Unde esse dolorum nam ipsam, excepturi dolor.</p>
+                    </div>
+                </div>  
+                
+                <div id="ex2" style="display: none;">
+                    <h2>UCM DINING</h2>
+                    <h3>Intel - Folsom, CA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit porro illo laborum ducimus blanditiis distinctio numquam facilis iste soluta minus culpa dignissimos nemo explicabo, doloremque eos reiciendis? Recusandae, officiis qui?</p>
+                </div>  
+            </div>
+            
+            <div id="languages" class="languages">
+                <h2>Languages Used</h2>
+                <br><br><br><br>
+                <div class="aiproj" id="aiproj">
+                    <button id="py" type="button"><span></span>Python</button>
+                </div>
+                <div class="powerBI" id="powerBI" >
+                    <button id="m" type="button"><span></span>Power BI: M</button>
+                    <button id="dax" type="button"><span></span>Power BI: DAX</button>
+                </div>
+        </div>
+    </div>
+
+{% endblock%}

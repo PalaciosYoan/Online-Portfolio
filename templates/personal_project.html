@@ -5,6 +5,67 @@
 {% endblock %}
 
 {% block body %}
-    <h2>Coming Soon</h2>
+<link rel='stylesheet' href="{{ url_for('static',filename='css/work_experience.css') }}">
+<script src="{{ url_for('static',filename='javascript/pp.js') }}"></script>
+
+    <div class="content">
+        <link rel='stylesheet' href="{{ url_for('static',filename='css/pp.css') }}">
+        <h1>Personal Projects <a href="https://github.com/PalaciosYoan">(github)</a>
+        </h1>
+        <div class="columns">
+            <div id="experience">
+                <div class="dropdowns" id="dropdown">
+                    <select name="workEx" id="projects" onchange="dropdown1()">
+                        <option value="proj1">Project1</option>
+                        <option value="proj2">Project2</option>
+                        <option value="proj3">Project3</option>
+                        <option value="proj4">Project4</option>
+                    </select>
+                </div>
+            
+
+
+                <div id="project1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis nemo asperiores porro corporis ab unde excepturi quod cumque? Mollitia voluptate fuga nesciunt! Fugit tempora repellat ipsum officiis aperiam doloremque cumque reiciendis, quam voluptate nostrum cupiditate harum nemo ex accusamus possimus quaerat reprehenderit dolorem molestias et magni. Quidem eius consequatur quo ducimus asperiores natus eveniet laudantium ratione atque, nulla fugiat sit, tempora, quaerat officia voluptatem fuga a accusantium dolorum cupiditate alias laboriosam! Quis nemo quidem nesciunt. Consectetur quisquam eligendi esse ab vero laboriosam voluptates soluta quidem ad at accusamus reiciendis provident non aliquid, molestiae eum ullam aliquam, quasi nemo molestias.</p>
+                </div>
+
+                <div id="project2" style="display: none;">
+                    <p>Loremaaaaaaaaaaaaaa ipsum dolor sit amet, consectetur adipisicing elit. Nisi accusantium eligendi numquam aliquid tenetur veritatis, reprehenderit, doloribus asperiores explicabo necessitatibus error corrupti facilis perspiciatis voluptas sequi quod! Doloribus dolorum nemo quisquam, molestias accusantium a eius blanditiis ut hic vero, inventore fugit porro dolorem iure expedita natus omnis sit laboriosam magni temporibus sed quod vel. Assumenda dolorum repudiandae odit aperiam dolor quibusdam voluptas, sit expedita rerum totam deserunt cupiditate quam repellendus voluptatum illo eum esse ratione, quis qui pariatur iure recusandae error excepturi voluptatibus! Nostrum deleniti magnam harum, eum eius similique dolor ab assumenda. Unde esse dolorum nam ipsam, excepturi dolor.</p>
+                </div>
+
+                <div id="project3" style="display: none;">
+                    <p>Loremdasdasd ipsum dolor sit amet, consectetur adipisicing elit. Nisi accusantium eligendi numquam aliquid tenetur veritatis, reprehenderit, doloribus asperiores explicabo necessitatibus error corrupti facilis perspiciatis voluptas sequi quod! Doloribus dolorum nemo quisquam, molestias accusantium a eius blanditiis ut hic vero, inventore fugit porro dolorem iure expedita natus omnis sit laboriosam magni temporibus sed quod vel. Assumenda dolorum repudiandae odit aperiam dolor quibusdam voluptas, sit expedita rerum totam deserunt cupiditate quam repellendus voluptatum illo eum esse ratione, quis qui pariatur iure recusandae error excepturi voluptatibus! Nostrum deleniti magnam harum, eum eius similique dolor ab assumenda. Unde esse dolorum nam ipsam, excepturi dolor.</p>
+                </div>
+
+                <div id="project4" style="display: none;">
+                    <p>Lorem ibbbbbbbbbbbbbbbbbbbbpsum dolor sit amet, consectetur adipisicing elit. Nisi accusantium eligendi numquam aliquid tenetur veritatis, reprehenderit, doloribus asperiores explicabo necessitatibus error corrupti facilis perspiciatis voluptas sequi quod! Doloribus dolorum nemo quisquam, molestias accusantium a eius blanditiis ut hic vero, inventore fugit porro dolorem iure expedita natus omnis sit laboriosam magni temporibus sed quod vel. Assumenda dolorum repudiandae odit aperiam dolor quibusdam voluptas, sit expedita rerum totam deserunt cupiditate quam repellendus voluptatum illo eum esse ratione, quis qui pariatur iure recusandae error excepturi voluptatibus! Nostrum deleniti magnam harum, eum eius similique dolor ab assumenda. Unde esse dolorum nam ipsam, excepturi dolor.</p>
+                </div>
+
+
+            </div>
+            <div id="languages" class="languages">
+                <h2>Languages Used</h2>
+                <div class="proj1" id="proj1">
+                    <button id="py" type="button"><span></span>Python</button>
+                </div>
+
+                <div class="proj2" id="proj2" >
+                    <button id="m" type="button"><span></span>Power BI: M</button>
+                    <button id="dax" type="button"><span></span>Power BI: DAX</button>
+                </div>
+
+                <div class="proj3" id="proj3" >
+                    <button id="m" type="button"><span></span>Power BI: M</button>
+                    <button id="dax" type="button"><span></span>Power BI: DAX</button>
+                </div>
+
+                <div class="proj4" id="proj4" >
+                    <button id="m" type="button"><span></span>Power BI: M</button>
+                    <button id="dax" type="button"><span></span>Power BI: DAX</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 {% endblock%}

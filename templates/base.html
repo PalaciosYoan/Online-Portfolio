@@ -4,37 +4,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='stylesheet' href="{{ url_for('static',filename='css/main.css') }}">
+        <link rel='stylesheet' href="{{ url_for('static',filename='css/base.css') }}">
         {% block head %}{% endblock%}
     </head>
 
     <body>
-        <header>
-            <div class='container'>
-                <nav>
-                    <ul>
-                        <li><a href='/home'>Home</a></li>
-                        <li><a href='/resume'>Resume</a></li>
-                        <li><a href='/personal_projects'>Personal Projects</a></li>
-                    </ul>
-                </nav>
+        <div class='banner'>
+            <div class="navbar">
+                <img src="{{ url_for('static',filename='images/logo.png') }}" class="logo">
+                <ul>
+                    <li><a href='/home'>Home</a></li>
+                    
+                    <li><a href='/work_experience'>Work Experience</a></li>
+                    <li><a href='/personal_projects'>Personal Projects</a></li>
+                    <li><a href='/contact'>Contact Me</a></li>
+                </ul>
             </div>
-        </header>
-
-        {% block body %}{% endblock%}
-        <br>
-        <header>
-            <div class='footer'>
-                <nav>
-                    <ul>
-                        <li><a href='/home'>Home</a></li>
-                        <li><a href='/resume'>Resume</a></li>
-                        <li><a href='/personal_projects'> Projects</a></li>
-                        <li><a href='/home'>Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+            {% block body %}{% endblock%}
+        </div>
     </body>
 
 </html>      

@@ -1,0 +1,122 @@
+
+input {
+    width: 200px;
+    padding: 25px 0;
+    text-align: center;
+    margin: 25px 15px;
+    border-radius: 35px;
+    border: 2px solid #009688;
+    
+    background:#009688;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.content{
+    text-align: center;
+    
+}
+
+input:hover {
+    font-size: 86%;
+    font-weight: bold;
+    background: transparent;
+}
+.content{
+    color: white;
+    
+}
+
+.content .about{
+    padding-right: 15%;
+    padding-left: 15%;
+    text-align: left;
+    
+}
+
+.content .about h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.content .about .buttons{
+    text-align: center;
+}
+
+.skills h1{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.skills .skills-content{
+    text-align: center;
+}
+
+
+.skills .skills-content .column{
+    /* width: calc(50% - 175px); */
+    padding-right: 15%;
+    padding-left: 15%;
+    color:white;
+}
+
+
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+
+.skills .skills-content .right .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .python::before{
+    width: 95%;
+}
+
+
+.skills-content .right .c::before{
+    width: 95%;
+}
+
+.skills-content .right .html::before{
+    width: 15%;
+}
+
+.skills-content .right .css::before{
+    width: 15%;
+}
+
+.skills-content .right .js::before{
+    width: 5%;
+}
+.skills-content .right .java::before{
+    width: 5%;
+}

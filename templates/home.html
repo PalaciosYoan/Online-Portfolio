@@ -1,0 +1,110 @@
+{% extends 'base.html'%}
+
+{% block head %}
+    <title>Home</title>
+{% endblock %}
+
+{% block body %}
+    <div class="content">
+        <link rel='stylesheet' href="{{ url_for('static',filename='css/home.css') }}">
+        <!-- <h1>Welcome To My Portfolio</h1>
+        <p>
+            This is my online Portfolio. You will get the chance to take a look at my expereiences and
+            projects that I have worked on or currently working on. There are some interactive projects that
+            you can play around with. Additionally, you can fill out the contact form 
+            to get in touch with me. I do take approximetly 2 business days to respond.
+        </p> -->
+
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h1 class="tittle"> My Programing  knowledge</h1>
+                <div class="skills-content">
+                    <div class="column right">
+                        <div class="bars">
+                            <div class="info">
+                                <span>Python</span>
+                                <span>95%</span>
+                                
+                            </div>
+                            <div class="line python"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>C++</span>
+                                <span>95%</span>
+                                
+                            </div>
+                            <div class="line c"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>15%</span>
+                                
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>15%</span>
+                                
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>5%</span>
+                                
+                            </div>
+                            <div class="line js"></div>
+                        </div>
+                        
+                        <div class="bars">
+                            <div class="info">
+                                <span>Java</span>
+                                <span>5%</span>
+                                
+                            </div>
+                            <div class="line java"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="about">
+            <br> <br>
+            <h1>About me</h1>
+
+            <p>
+                Hi, my name is Yoan. My fascination with technology was sparked ever since I was a child. 
+                As a child I would take apart my remote toy cars, just to see how they work.
+                My curiosity grew and decided to hack my own 2009 macbook pro.
+                I did a lot of research and tried different approaches to get into my laptop without using the passwords.
+                I probably spent three weeks researching how to do it, until I had a break and was able to hack it.
+                Ever since I decided to familiar myselft with computers.
+                <br><br>
+                I find it amazing how fast society has been shaped and continue to be influenced by Computer Science.
+                Now we are at a stage that anything seems to be possible thanks to relentless problem solving of computer scientist.
+                When Norman Bel Geddes gave the idea of the autonomous vehicle concept, it seem like a impossible task.
+                We know that Tesla Motors allowed their cars to learn to drive themselves and giving us the self-driving car that we know from Tesla Motors.
+                I studied Computer Science at UC Merced because it gave me the fundamentals of Computer Science and the understanding of ethics.
+                <br><br>
+      
+            
+            </p> 
+        
+            <br>
+            <div class="buttons">
+                <form method="post" action="/">
+                    <input type="submit" value="WORK EXPERIENCE" name="experience"/>
+                    <input type="submit" value="PERSONAL PROJECTS" name="projects"/> 
+                    <input type="submit" value="GET IN CONTACT" name="contact"/> 
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock%}

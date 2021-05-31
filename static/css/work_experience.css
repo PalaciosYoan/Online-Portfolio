@@ -1,0 +1,97 @@
+.content {
+    padding-right: 15%;
+    padding-left: 15%;
+    color: white;
+    height: 100vh;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 2px solid currentColor;
+}
+
+.content .columns {
+    display: flex;
+    gap: 1em;
+}
+
+#experience, #languages{
+    width: 100%;
+}
+
+#workEx, #projects{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+#projects {
+    font-size: 22px;
+    padding-bottom: 15px;
+}
+
+#dropdown {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#dax, #m{
+    display:none;
+}
+#workEx:hover, #projects:hover {
+    background-color: rgba(48, 46, 133, 0.719);
+}
+
+p {
+    text-indent: 35px;
+}
+
+.languages {
+    padding-top: 35px;
+    position: relative;
+}
+
+.languages h2{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    margin: 25px 15px;
+    border-radius: 45px;
+    border: 2px solid white;
+    font-weight: bold;
+    font-size: 25px;
+    overflow: hidden;
+    
+}
+
+.aiproj, .powerBI {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#py {
+    background:#306998;
+    color: #FFE873;
+    
+}
+
+#dax, #m {
+    background:#FFE873;
+    color: #0e5992;
+    text-align: center;
+}
+
+
